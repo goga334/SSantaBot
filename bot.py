@@ -87,6 +87,8 @@ def bot_logic(message):
                 bot.send_message(message.from_user.id, (people[i]+' отримує подарунок від '+gift[i]))
                 time.sleep(1)
             bot.send_message(message.from_user.id, "Веселого нового року))", reply_markup=markup4)
+            people.clear()
+            gift.clear()
 
         elif message.text == '"Поки на паузі"':
             bot.send_message(message.from_user.id, "Жду отвєта як Вова 50 грам. Ну ти цей... тикай /start єслі чо", reply_markup=markup3)
