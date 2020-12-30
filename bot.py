@@ -91,7 +91,8 @@ def bot_logic(message):
             gift.clear()
 
         elif message.text == '"Поки на паузі"':
-            bot.send_message(message.from_user.id, "Жду отвєта як Вова 50 грам. Ну ти цей... тикай /start єслі чо", reply_markup=markup3)
+            bot.send_message(message.from_user.id, "Жду отвєта як Вова 50 грам. Ну ти цей... тикай /start єслі чо", reply_markup=markup1)
+            bot.send_photo(message.from_user.id, 'https://cont.ws/uploads/pic/2019/4/images_11886.jpg')
 
     elif modes.mode == 'receiving':
         people.append(message.text)
